@@ -1,0 +1,8 @@
+[
+  {"c": "01", "nazev": "Architektonická štúdia", "popis": "Kompletná štúdia riešená 3D technológiami: vizualizácie, 3D model a panorámy. Vidíte dom skôr, než sa začne stavať."},
+  {"c": "02", "nazev": "Dokumentácia pre územné rozhodnutie", "popis": "Podklady pre územné konanie spracované tak, aby sa dalo ísť ďalej bez zbytočných kôl dokladania."},
+  {"c": "03", "nazev": "Dokumentácia pre stavebné povolenie", "popis": "Projekt pre stavebné povolenie vrátane profesií: statika, voda, kanalizácia, plyn, elektroinštalácie, vykurovanie a požiarna ochrana."},
+  {"c": "04", "nazev": "Dokumentácia pre realizáciu stavby", "popis": "Realizačný projekt s výkazom materiálu, rozpočtom a vyriešenými detailmi, aby sa dal dom skutočne postaviť."},
+  {"c": "05", "nazev": "Inžiniering", "popis": "Vybavíme územné rozhodnutie, stavebné povolenie aj kolaudáciu. Vy ušetríte čas, my sa vyhneme dodatočnému dokladaniu dokumentov."},
+  {"c": "06", "nazev": "3D skenovanie budov", "popis": "Laserové zameranie interiérov a fasád, projekt zo zamerania (dwg, pdf) alebo mračno bodov pre Archicad a Revit."}
+]

@@ -1,0 +1,21 @@
+{
+  "domy": [
+    {"f": "dom-hero.jpg", "alt": "Vizualizácia moderného rodinného domu s drevenou fasádou a pergolou"},
+    {"f": "dom-garaz.jpg", "alt": "Vizualizácia rodinného domu s garážou a drevenými prvkami"},
+    {"f": "dom-terasa.jpg", "alt": "Vizualizácia rodinného domu s terasou"},
+    {"f": "dom-dusk.jpg", "alt": "Vizualizácia rodinného domu za súmraku"},
+    {"f": "dom-biely.jpg", "alt": "Vizualizácia bieleho dvojpodlažného rodinného domu"},
+    {"f": "dom-drevo.jpg", "alt": "Vizualizácia rodinného domu s drevenou fasádou"},
+    {"f": "dom-radovy.jpg", "alt": "Vizualizácia radových domov so sedlovou strechou"},
+    {"f": "dom-ulica.jpg", "alt": "Vizualizácia rodinného domu s tehlovým prvkom na fasáde"},
+    {"f": "dom-podkrovie.jpg", "alt": "Vizualizácia rodinného domu s podkrovím"}
+  ],
+  "verejne": [
+    {"f": "tribuna.jpg", "alt": "Vizualizácia hlavnej tribúny futbalového štadióna"},
+    {"f": "stadion.jpg", "alt": "Letecký pohľad na vizualizáciu štadióna a okolitého areálu"},
+    {"f": "skola.jpg", "alt": "Vizualizácia školskej budovy s átriom"},
+    {"f": "pumptrack.jpg", "alt": "Vizualizácia pumptrackovej dráhy v parku"},
+    {"f": "skatepark.jpg", "alt": "Vizualizácia skateparku"},
+    {"f": "bahrajn.jpg", "alt": "Vizualizácia budovy s ornamentálnou fasádou"}
+  ]
+}

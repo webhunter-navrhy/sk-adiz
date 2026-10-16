@@ -1,0 +1,31 @@
+{
+  "slug": "sk-adiz",
+  "nazev": "ADIZ atelier",
+  "url": "https://webhunter-navrhy.github.io/sk-adiz/",
+  "base": "/sk-adiz/",
+  "lang": "sk",
+  "popis": "ADIZ atelier, Trnava: architektonické štúdie, projekty rodinných domov a stavieb, inžiniering a 3D skenovanie budov. Projektujeme v BIM po celom Slovensku.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "dom-hero.jpg",
+  "logo": "logo.png",
+  "theme_color": "#ffffff",
+  "typ": "LocalBusiness",
+  "ico": "",
+  "kontakt": {
+    "email": "adiz@adiz.eu",
+    "telefon": "",
+    "adresa": {"ulice": "Špačinská 152", "psc": "917 01", "mesto": "Trnava", "zeme": "SK"}
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "",
+  "formular": {"endpoint": "", "demo": true, "predmet": "Dopyt z webu ADIZ atelier"},
+  "nav": [
+    {"text": "Služby", "href": "#sluzby"},
+    {"text": "BIM", "href": "#bim"},
+    {"text": "Portfólio", "href": "#portfolio"},
+    {"text": "O nás", "href": "#o-nas"},
+    {"text": "Kontakt", "href": "#kontakt"}
+  ]
+}

@@ -1,0 +1,132 @@
+{% extends "_base.html" %}
+{% set titulek = 'ADIZ atelier – architekt Trnava: rodinné domy, projekty, inžiniering' %}
+{% set cesta = '' %}
+{% block obsah %}
+<section class="hero">
+  <div class="wrap hero-g">
+    <div class="hero-text">
+      <p class="stitok">Architektonický ateliér · Trnava</p>
+      <h1>Architektúra na mieru: domy, ktoré sa dajú postaviť</h1>
+      <p class="hero-lead">Od architektonickej štúdie cez projekt a stavebné povolenie až po realizáciu. Všetko pod jednou strechou, po celom Slovensku.</p>
+      <div class="hero-cta">
+        <a class="tlacitko" href="#kontakt">Pošlite nám zadanie</a>
+        <a class="tlacitko tl-ghost" href="#portfolio">Pozrieť portfólio</a>
+      </div>
+    </div>
+    <div class="hero-foto">
+      {{ img('dom-hero.jpg', 'Vizualizácia moderného rodinného domu s drevenou fasádou a pergolou', sizes='(min-width: 60rem) 44rem, 100vw') }}
+    </div>
+  </div>
+  <ul class="fakta wrap" role="list">
+    <li><strong>Viac než 400</strong><span>projektov na mieru</span></li>
+    <li><strong>3D BIM</strong><span>projekcia z prvkov, ktoré sa stavajú</span></li>
+    <li><strong>Celé Slovensko</strong><span>architektonické služby a inžiniering</span></li>
+  </ul>
+</section>
+
+<section class="sekce" id="sluzby">
+  <div class="wrap">
+    <header class="sekce-hlava">
+      <p class="stitok">Ponúkame pod jednou strechou</p>
+      <h2>Od prvej skice po kolaudáciu</h2>
+      <p>Nenašli ste správny katalógový projekt? Navrhneme dom na mieru: bungalov, viacpodlažný dom aj vilu.</p>
+    </header>
+    <ol class="sluzby" role="list">
+      {% for s in data.sluzby %}
+      <li><span class="sl-c">{{ s.c }}</span><h3>{{ s.nazev }}</h3><p>{{ s.popis }}</p></li>
+      {% endfor %}
+    </ol>
+  </div>
+</section>
+
+<section class="sekce tmava" id="bim">
+  <div class="wrap bim-g">
+    <div>
+      <p class="stitok stitok-sv">Projektujeme v BIM</p>
+      <h2>Model z prvkov, ktoré sa naozaj stavajú</h2>
+      <p>V 3D BIM softvéri vzniká model zo steny, okna, dverí či strechy, nie zo skladania bodov a hrán. Každý prvok nesie vlastnosti: výrobcu, materiál aj cenu. Kolízie sa ukážu ešte pri projekcii, nie na stavbe.</p>
+      <p>Z modelu vychádzajú rozpočty aj riadenie stavby a dá sa použiť aj pri správe budovy.</p>
+    </div>
+    <div>
+      <h3>Výhody pre investora</h3>
+      <ul class="odrazky" role="list">
+        <li>vyššia kvalita výsledného diela</li>
+        <li>jednoduchšie spracovanie variantov už v štúdii</li>
+        <li>včasná detekcia kolízií pri projekcii</li>
+        <li>úspora peňazí a času na stavbe</li>
+        <li>rýchlejšia analýza nákladov podľa rozpočtu investora</li>
+        <li>rýchle energetické analýzy</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sekce" id="portfolio">
+  <div class="wrap">
+    <header class="sekce-hlava">
+      <p class="stitok">Portfólio</p>
+      <h2>Rodinné domy</h2>
+      <p>Bungalov, viacpodlažný dom alebo vila: štúdia, realizačný projekt aj projekt interiéru.</p>
+    </header>
+    <div class="galeria">
+      {% for p in data.portfolio.domy %}<figure>{{ img(p.f, p.alt, sizes='(min-width: 60rem) 24rem, (min-width: 40rem) 45vw, 100vw') }}</figure>{% endfor %}
+    </div>
+    <header class="sekce-hlava druha">
+      <h2>Verejné stavby, šport a priemysel</h2>
+      <p>Pre mestá, obce, školy aj priemyselných investorov.</p>
+    </header>
+    <div class="galeria">
+      {% for p in data.portfolio.verejne %}<figure>{{ img(p.f, p.alt, sizes='(min-width: 60rem) 24rem, (min-width: 40rem) 45vw, 100vw') }}</figure>{% endfor %}
+    </div>
+    <div class="klienti">
+      <h3>Z nášho zoznamu klientov</h3>
+      <p>{{ data.klienti|join(' · ') }}</p>
+    </div>
+  </div>
+</section>
+
+<section class="sekce siva" id="skenovanie">
+  <div class="wrap sken-g">
+    <div class="sken-foto">{{ img('skenovanie.jpg', '3D sken interiéru budovy s meraním vzdialeností', sizes='(min-width: 60rem) 30rem, 100vw') }}</div>
+    <div>
+      <p class="stitok">3D skenovanie budov</p>
+      <h2>Zameranie s vysokou presnosťou, bez zdĺhavého merania</h2>
+      <p>Laserovo skenujeme interiéry aj fasády, hotových aj rozostavaných budov. Dostanete projekt zo zamerania (dwg, pdf) alebo mračno bodov pre Archicad a Revit, prípadne 360° panoramatické fotky v HDR kvalite.</p>
+      <ul class="odrazky" role="list">
+        <li>rýchlosť a presnosť</li>
+        <li>lepšia spolupráca medzi profesiami</li>
+        <li>virtuálna prehliadka</li>
+        <li>možnosť priameho merania</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section class="sekce" id="o-nas">
+  <div class="wrap o-g">
+    <div>
+      <p class="stitok">O nás</p>
+      <h2>Za dôležité považujeme funkčné budovy</h2>
+      <p>Komplexné služby klientom poskytujeme od roku 2001. Naším cieľom je skutočne zrealizovateľná architektúra: budovy, ktoré dokážete postaviť, nie teoretické štúdie.</p>
+      <p>Od februára 2020 sme členmi Inštitútu pre pasívne domy.</p>
+    </div>
+    <ul class="tim" role="list">
+      <li><strong>Marek Mečír</strong><span>konateľ</span></li>
+      <li><strong>Martin Skala</strong><span>stavebný inžinier</span></li>
+      <li><strong>Kristína Jakubcová</strong><span>stavebný inžinier</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sekce tmava" id="kontakt">
+  <div class="wrap kont-g">
+    <div>
+      <p class="stitok stitok-sv">Kontakt</p>
+      <h2>Povedzte nám, čo plánujete</h2>
+      <p>Stačí pár viet o pozemku alebo stavbe. Ozveme sa Vám e-mailom.</p>
+      <p class="kont-udaje"><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a><br>Špačinská 152, 917 01 Trnava</p>
+    </div>
+    {% include "_formular.html" %}
+  </div>
+</section>
+{% endblock %}
